@@ -28,8 +28,7 @@ btnMostrar.addEventListener('click', function(){
     let contactosGuardados = JSON.parse(localStorage.getItem("contactos")) || []; 
 
     contactosGuardados.forEach(contacto => {
-        list.innerHTML += `<li>${contacto.nombre}: ${contacto.telefono}
-        </li>`;
+        list.innerHTML += `<li>${contacto.nombre}: ${contacto.telefono}</li>`;
     });
 
 });
