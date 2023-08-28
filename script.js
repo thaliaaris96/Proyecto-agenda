@@ -28,15 +28,9 @@ btnMostrar.addEventListener('click', function(){
     let contactosGuardados = JSON.parse(localStorage.getItem("contactos")) || []; 
 
     contactosGuardados.forEach(contacto => {
-        list.innerHTML += `<li>${contacto.nombre}, ${contacto.telefono}</li>`;
+        list.innerHTML += `<li>${contacto.nombre}: ${contacto.telefono}
+        </li>`;
     });
 
-    let botonesEliminar = document.getElementsByClassName('btnEliminar');
-    for (let i = 0; i < botonesEliminar.length; i++) {
-        botonesEliminar[i].addEventListener('click', function(){
-            let index = this.getAttribute('data-index');
-            eliminarContacto(index);
-        });
-    }
-
 });
+
