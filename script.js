@@ -39,9 +39,8 @@ btnMostrar.addEventListener('click', function () {
         });
     }
 
-<<<<<<< Updated upstream
 });
-=======
+
 let btnEliminar = document.getElementById('btnEliminar');
 let listContactos = JSON.parse(localStorage.getItem("contactos")) || [];
 
@@ -69,8 +68,3 @@ btnModificar.addEventListener('click', function () {
         mostrarContactos();
     }
 });
-
-
-
-
->>>>>>> Stashed changes
