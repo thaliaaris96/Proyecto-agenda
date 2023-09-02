@@ -33,8 +33,7 @@ btnMostrar.addEventListener('click', function () {
 
 });
 
-<<<<<<< HEAD
-=======
+
 let btnEliminar = document.getElementById('btnEliminar');
 let listContactos = JSON.parse(localStorage.getItem("contactos")) || [];
 
@@ -62,4 +61,3 @@ btnModificar.addEventListener('click', function () {
         mostrarContactos();
     }
 });
->>>>>>> js-fix
