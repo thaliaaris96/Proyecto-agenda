@@ -46,7 +46,7 @@ btnEliminar.addEventListener('click', function () {
 });
 
 let btnModificar = document.getElementById('btnModificar');
-let listContactosG = JSON.parse(localStorage.getItem("contactos")) || [];
+let listContactosGuardados = JSON.parse(localStorage.getItem("contactos")) || [];
 
 btnModificar.addEventListener('click', function () {
    
@@ -61,3 +61,6 @@ btnModificar.addEventListener('click', function () {
         mostrarContactos();
     }
 });
+
+
+
