@@ -28,18 +28,11 @@ btnMostrar.addEventListener('click', function () {
     let contactosGuardados = JSON.parse(localStorage.getItem("contactos")) || [];
 
     contactosGuardados.forEach(contacto => {
-        list.innerHTML += `<li>${contacto.nombre}, ${contacto.telefono}</li>`;
+        list.innerHTML += `<li>${contacto.nombre}: ${contacto.telefono}</li>`;
     });
 
-    let botonesEliminar = document.getElementsByClassName('btnEliminar');
-    for (let i = 0; i < botonesEliminar.length; i++) {
-        botonesEliminar[i].addEventListener('click', function(){
-            let index = this.getAttribute('data-index');
-            eliminarContacto(index);
-        });
-    }
-
 });
+
 
 let btnEliminar = document.getElementById('btnEliminar');
 let listContactos = JSON.parse(localStorage.getItem("contactos")) || [];
@@ -53,7 +46,7 @@ btnEliminar.addEventListener('click', function () {
 });
 
 let btnModificar = document.getElementById('btnModificar');
-let listContactosG = JSON.parse(localStorage.getItem("contactos")) || [];
+let listContactosGuardados = JSON.parse(localStorage.getItem("contactos")) || [];
 
 btnModificar.addEventListener('click', function () {
    
@@ -68,3 +61,6 @@ btnModificar.addEventListener('click', function () {
         mostrarContactos();
     }
 });
+
+
+
