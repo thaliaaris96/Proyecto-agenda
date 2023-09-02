@@ -70,7 +70,7 @@ form {
 body {
     font-size: 62.5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: lightgoldenrodyellow;
+    background-color: lightcyan;
 }
 
 h1 {
@@ -125,8 +125,22 @@ form {
 .contenedor {
     height: 15rem;
     width: 90%;
-    margin: 0 auto;
+    margin: 5%;
     border: 1px dashed black;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .contenedor  {
+        width: 90%;
+        margin: 10%;
+        padding-left: 1rem;
+        justify-content: left;
+        display: inline-flex;
+        grid-template-columns: 40% 60%;
+        width: 100%;
+    }
 }
 
 .buscar {
